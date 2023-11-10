@@ -1,6 +1,6 @@
 import Login from "./Login";
-import Signup from "./Signup";
 import Dashboard from "./Dashboard";
+import Signup from "./signup";
 import ForgotPassword from "./ForgotPassword";
 import UpdateProfile from "./UpdateProfile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
