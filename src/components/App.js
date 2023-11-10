@@ -11,7 +11,7 @@ import PrivateRoute from "./PrivateRoute";
 const App = () => {
   return (
     <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "100vh" }}>
-      <div className="w-100" style={{ maxWidth: '401px' }}>
+      <div className="w-100" style={{ maxWidth: '400px' }}>
         <Router>
           <AuthProvider>
             <Routes>
