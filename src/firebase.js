@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import "firebase/auth";
 import { getAuth } from "firebase/auth";
+import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -14,6 +15,7 @@ const firebaseConfig = {
   projectId: "fan-app-development",
   storageBucket: "fan-app-development.appspot.com",
   messagingSenderId: "798609856173",
+  databaseURL: "https://fan-app-development-default-rtdb.firebaseio.com/",
   appId: "1:798609856173:web:33704a7bbe7e3ba6fc5824"
 };
 
@@ -30,6 +32,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+// Initialize Realtime Database and get a reference to the service
+const database = getDatabase(app);
 
 export const auth = getAuth()
 export default app
